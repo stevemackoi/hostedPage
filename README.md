@@ -1,1 +1,1 @@
-Static hosting testing
+Static HTTP hosting (testing)
