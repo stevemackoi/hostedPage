@@ -1,65 +1,193 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>💀 greenwood</title>
-    <meta name="description" content="A brief description of your site for search engines">
-    <meta name="author" content="Information about the author here">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
-    <link rel="icon" type="image/png" href="favicon.png">
-    
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
-    <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>    
-  </head>
-  
-  <body>
-    <header id="header">
-      <!-- <img src="The Void (Crop).jpg" alt="scary image.." width="200" height="200" /> -->
-      <pre>
-       
-   ██████╗ ██████╗ ███████╗███████╗███╗   ██╗██╗    ██╗ ██████╗  ██████╗ ██████╗ 
-  ██╔════╝ ██╔══██╗██╔════╝██╔════╝████╗  ██║██║    ██║██╔═══██╗██╔═══██╗██╔══██╗
-  ██║  ███╗██████╔╝█████╗  █████╗  ██╔██╗ ██║██║ █╗ ██║██║   ██║██║   ██║██║  ██║
-  ██║   ██║██╔══██╗██╔══╝  ██╔══╝  ██║╚██╗██║██║███╗██║██║   ██║██║   ██║██║  ██║
-  ╚██████╔╝██║  ██║███████╗███████╗██║ ╚████║╚███╔███╔╝╚██████╔╝╚██████╔╝██████╔╝
-   ╚═════╝ ╚═╝  ╚═╝╚══════╝╚══════╝╚═╝  ╚═══╝ ╚══╝╚══╝  ╚═════╝  ╚═════╝ ╚═════╝ 
-      
-      </pre>
-      <ul class="main-menu">
-        <li><a href="#home">home</a></li>
-        <li><a href="#blog">blog</a></li>
-        <li><a href="#contact">contact</a></li>
-      </ul>                 
-    </header>
-   
-    <div id="container">
-      <div class="inner">
-        <div id="content"> 
-          <div id="home" class="content-region hide">
-            <h2>Home</h2>
-            <p>This website is (obviously) under construction.</p>
-          </div>
+
+<head>
+  <meta charset="utf-8">
+  <title>💀 greenwood</title>
+  <meta name="description" content="A brief description of your site for search engines">
+  <meta name="author" content="Information about the author here">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"
+    type="text/css" />
+  <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header id="header">
+    <!-- <img src="The Void (Crop).jpg" alt="scary image.." width="200" height="200" /> -->
+    <pre>
+┏━┛┃ ┃┏━┛┏━┃━┏┛  ┏━┛┃ ┃┏━┛┏━┛━┏┛
+┃  ┏━┃┏━┛┏━┃ ┃   ━━┃┏━┃┏━┛┏━┛ ┃ 
+━━┛┛ ┛━━┛┛ ┛ ┛   ━━┛┛ ┛━━┛━━┛ ┛ 
+    </pre>
+    <ul class="main-menu">
+      <li><a href="#home">nix</a></li>
+      <li><a href="#blog">windows</a></li>
+      <li><a href="#contact">networking</a></li>
+    </ul>
+  </header>
+
+  <div id="container">
+    <div class="inner">
+      <div id="content">
+        <div id="home" class="content-region hide">
+          <h2>Process Commands</h2>
+
+          <p>Process list, tree format</p>
+          <pre class="command-block"><code>ps axjf</code></pre>
+
+          <p>Process tree, hide kernel threads</p>
+          <pre class="command-block"><code>pstree -pcUT</code></pre>
+
+          <p>Find PID of given process</p>
+          <pre class="command-block"><code>pidof &lt;process name&gt;</code></pre>
+
+          <h3>Process Details</h3>
+
+          <p>process arguments</p>
+          <pre class="command-block"><code>/proc/PID/cmdline</code></pre>
+
+          <p>process current working directory (symlink)</p>
+          <pre class="command-block"><code>/proc/PID/cwd</code></pre>
+
+          <p>path to actual process executable file (symlink)</p>
+          <pre class="command-block"><code>/proc/PID/exe</code></pre>
+
+          <p>environment used by process</p>
+          <pre class="command-block"><code>/proc/PID/environ</code></pre>
+
+          <p>the root path as seen by the process</p>
+          <pre class="command-block"><code>/proc/PID/root</code></pre>
+
+          <p>basic information about a process including run state and memory usage</p>
+          <pre class="command-block"><code>/proc/PID/status</code></pre>
+
+          <p>hard links to any tasks that have been started by this (the parent) process</p>
+          <pre class="command-block"><code>/proc/PID/task</code></pre>
+
+          <p>socket table (in hex)</p>
+          <pre class="command-block"><code>/proc/PID/net/tcp</code></pre>
+
+          <h2>systemd Service Control</h2>
+
+          <p>List of currently running services</p>
+          <pre class="command-block"><code>systemctl list-units</code></pre>
+
+          <p>Start a service</p>
+          <pre class="command-block"><code>systemctl start &lt;service&gt;</code></pre>
+
+          <p>Stop a service</p>
+          <pre class="command-block"><code>systemctl stop &lt;service&gt;</code></pre>
+
+          <p>Restart a service</p>
+          <pre class="command-block"><code>systemctl restart &lt;service&gt;</code></pre>
+
+          <p>Restart only if already running</p>
+          <pre class="command-block"><code>systemctl condrestart &lt;service&gt;</code></pre>
+
+          <p>Reload a service</p>
+          <pre class="command-block"><code>systemctl reload &lt;service&gt;</code></pre>
+
+          <p>Status of a service</p>
+          <pre class="command-block"><code>systemctl status &lt;service&gt;</code></pre>
+
+          <p>Enable service at boot</p>
+          <pre class="command-block"><code>systemctl enable &lt;service&gt;</code></pre>
+
+          <p>Disable service at boot</p>
+          <pre class="command-block"><code>systemctl disable &lt;service&gt;</code></pre>
+
+          <p>Check if service is enabled at boot</p>
+          <pre class="command-block"><code>systemctl is-enabled &lt;service&gt;</code></pre>
+
+          <p>Check to see if service is running</p>
+          <pre class="command-block"><code>systemctl is-active &lt;service&gt;</code></pre>
+
+          <p>Kill all processes related to a service</p>
+          <pre class="command-block"><code>systemctl kill &lt;service&gt;</code></pre>
+
+          <p>View service configuration file</p>
+          <pre class="command-block"><code>systemctl cat &lt;service&gt;</code></pre>
+
+          <h2>SysV Service Control</h2>
+
+          <p>Status of all services (+ running, - stopped, ? no status)</p>
+          <pre class="command-block"><code>service --status-all</code></pre>
+
+          <p>Status of a service</p>
+          <pre class="command-block"><code>service &lt;service&gt; status</code></pre>
+
+          <p>Start a service</p>
+          <pre class="command-block"><code>service &lt;service&gt; start</code></pre>
+
+          <p>Stop a service</p>
+          <pre class="command-block"><code>service &lt;service&gt; stop</code></pre>
+
+          <p>Restart a service</p>
+          <pre class="command-block"><code>service &lt;service&gt; restart</code></pre>
+
+          <p>Reload a service</p>
+          <pre class="command-block"><code>service &lt;service&gt; reload</code></pre>
+
+          <h2>Kernel Module Commands</h2>
+
+          <p>Display currently loaded kernel modules</p>
+          <pre class="command-block"><code>lsmod</code></pre>
           
-          <div id="blog" class="content-region hide">
-            <h2>Blog</h2>
-            <p>Welcome to the blog section. Here you'll find my latest posts.</p>
-          </div>
-          
-          <div id="contact" class="content-region hide">
-            <h2>Contact</h2>
-            <p>https://github.com/stevemackoi</p>
-          </div>
+          <p>Kernel module details</p>
+          <pre class="command-block"><code>modinfo &lt;module&gt;</code></pre>
+
+          <p>Kernel parameters</p>
+          <pre class="command-block"><code>sysctl -a</code></pre>
+
+
+
+
+
+          <p>List all files including hidden ones with details:</p>
+          <pre class="command-block"><code>ls -la</code></pre>
+
+          <p>List all files including hidden ones with details:</p>
+          <pre class="command-block"><code>ls -la</code></pre>
+
+          <p>List all files including hidden ones with details:</p>
+          <pre class="command-block"><code>ls -la</code></pre>
+
+          <p>List all files including hidden ones with details:</p>
+          <pre class="command-block"><code>ls -la</code></pre>
+
+          <p>List all files including hidden ones with details:</p>
+          <pre class="command-block"><code>ls -la</code></pre>
+
+          <p>List all files including hidden ones with details:</p>
+          <pre class="command-block"><code>ls -la</code></pre>
+
+        </div>
+
+        <div id="blog" class="content-region hide">
+          <h2>Windows</h2>
+          <p>Welcome to the blog section. Here you'll find my latest posts.</p>
+        </div>
+
+        <div id="contact" class="content-region hide">
+          <h2>Networking</h2>
+          <p>https://github.com/stevemackoi</p>
         </div>
       </div>
     </div>
+  </div>
 
-    <footer>  
-      © 2025 urmom 💔
-    </footer>
-    
-    <script type="text/javascript" src="script.js"></script>
-  </body>
+  <footer>
+    © 2026 urmom 💔
+  </footer>
+
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
 </html>

@@ -58,10 +58,6 @@ h6 { font-size: 1.4rem; line-height: 1.6;  letter-spacing: 0; }
 p {
   margin: 0 auto 1.5em auto; /* bottom margin for paragraphs */
 }
-p + p {
-
-}
-
 /**
  * Quotes & Blockquotes
  */
@@ -137,5 +133,19 @@ ul.main-menu li a.active {
   display:block;
 }
 
+/* Styling ONLY the code blocks meant for Linux commands */
+pre.command-block {
+  background-color: #1e1e1e;   /* Dark background */
+  color: #f1f1f1;             /* Off-white text */
+  padding: 14px;              /* Spacing inside the block */
+  border-radius: 6px;         /* Rounded corners */
+  border: 1px solid #333;     /* Subtle border line */
+  overflow-x: auto;           /* Adds a horizontal scrollbar if needed */
+  margin-bottom: 2rem;        /* Pushes down the next element */
+}
 
+pre.command-block code {
+  font-family: 'Fira Code', 'Courier New', Courier, monospace; 
+  font-size: 1.5rem;          /* Bumped up to 1.5rem to match your body text size (15px) */
+}
 
